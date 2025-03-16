@@ -1072,8 +1072,8 @@ Concentremos un poco nuestra atención en el caso en que $W=\K^n$. Dependiendo s
 \begin{itemize}
 \item Si $S$ y $T$ est\'an dados por generadores, $S + T$ est\'a generado por la unión de todos los generadores.
 \item Si $S$ y $T$ est\'an dados por ecuaciones, $S \cap T$ est\'a generado por la unión de todas las ecuaciones.
-\item Si $S$ y/o $T$ est\'an dados por ecuaciones, calculamos generadores de ambos y tomamos la unión.
-\item Si $S$ y/o $T$ est\'an dados por generadores, calculamos ecuaciones de ambos y tomamos la unión de las ecuaciones.
+\item Para calcular $S + T$, si $S$ y/o $T$ vienen dados por ecuaciones, calculamos los generadores de ambos y tomamos la unión
+\item Para calcular $S \cap T$, si $S$ y/o $T$ vienen dados por generadores, calculamos ecuaciones de ambos y tomamos la unión de las ecuaciones.
 \end{itemize}
 
 Con métodos similares podemos realizar otras operaciones entre subespacios. Por ejemplo, ¿cómo podemos determinar si $S \subset T$? Ahora el caso más simple es si $S$ está dado por generadores y $T$ por ecuaciones. En este caso, alcanza verificar si todos los generadores de $S$ son elementos de $T$ verificando si cumplen las ecuaciones que definen a $T$.
@@ -1460,7 +1460,7 @@ print("id * A = \n", id @ A)
 
 \begin{itemize}
 \item \textbf{Triangular superior:} Una matriz $\Ub \in \R^{n \times n}$ se llama triangular superior si $a_{ij} = 0$ para todo $i > j$ (es decir, todas las entradas abajo de la diagonal son 0).
-\item \textbf{Triangular inferior:} Una matriz $\Lb \in \R^{n \times n}$ se llama triangular inferior si $a_{ij} = 0$ para todo $i > j$ (es decir, todas las entradas arriba de la diagonal son 0).
+\item \textbf{Triangular inferior:} Una matriz $\Lb \in \R^{n \times n}$ se llama triangular inferior si $a_{ij} = 0$ para todo $i < j$ (es decir, todas las entradas arriba de la diagonal son 0).
 \item \textbf{Matriz simétrica:} $\Ab\in \R^{n\times n}$ es simétrica si $\Ab^T = \Ab$.
 \item \textbf{Matriz Hermitiana:} $\Ab\in \C^{n\times n}$ es Hermitiana si $\Ab^* = \Ab$.
 \item \textbf{Matriz ortogonal:} $\Ab$ es ortogonal si $\Ab\Ab^T = \Ab^T\Ab = \Id_n$.
